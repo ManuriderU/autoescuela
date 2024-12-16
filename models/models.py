@@ -85,11 +85,11 @@ class examen(models.Model):
                 vals['name'] = (self.env['ir.sequence'].
                 next_by_code('autoescuela.examen'))
     #Definimos el modelo de datos
-class autoescuela_examen(models.Model):
+#class autoescuela_examen(models.Model):
     # Nombre y descripcion del modelo de datos
-    _name = 'autoescuela.autoescuela_examen'
-    _description = 'autoescuela.autoescuela'
-    examen_id = fields.Many2many()
-    autoescuela_id = fields.Many2many()
+#    _name = 'autoescuela.autoescuela_examen'
+#    _description = 'autoescuela.autoescuela'
+#    examen_id = fields.Many2many()
+#    autoescuela_id = fields.Many2many()
 
 
