@@ -90,6 +90,6 @@ class autoescuela_examen(models.Model):
     _name = 'autoescuela.autoescuela_examen'
     _description = 'autoescuela.autoescuela'
     examen_ids = fields.Many2many()
-    autoescuela_ids = field.Many2many()
+    autoescuela_ids = fields.Many2many()
 
 
