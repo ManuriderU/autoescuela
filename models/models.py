@@ -65,7 +65,7 @@ class examen(models.Model):
     _description = 'autoescuela.autoescuela'
     name = fields.Char(compute = "create", store = True)
     fecha = fields.Date()
-    autoescuela_ids = field.Many2many()
+    autoescuela_ids = fields.Many2many()
     alumno_id = fields.Many2one(required= True)
     moneda_id= fields.Many2one('res.currency', string="Moneda")
     precio = fields.Float() # en el enunciado de la practica pone tipo Monetary pero da fallo
