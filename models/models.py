@@ -40,7 +40,7 @@ class profesor(models.Model):
     antiguedad = fields.Integer(compute = "calcular_antiguedad", store = True)
     alumno_ids = fields.One2many()
     @api.depends('incorporacion') 
-    def calcular_antiguedad(self)
+    def calcular_antiguedad(self):
         for record in self:
             fecha = date.today()
             record.antiguedad = fecha.years - record.incorporacion.years 
