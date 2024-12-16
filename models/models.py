@@ -89,7 +89,7 @@ class autoescuela_examen(models.Model):
     # Nombre y descripcion del modelo de datos
     _name = 'autoescuela.autoescuela_examen'
     _description = 'autoescuela.autoescuela'
-    examen_ids = fields.Many2many()
-    autoescuela_ids = fields.Many2many()
+    examen_id = fields.Many2many()
+    autoescuela_id = fields.Many2many()
 
 
